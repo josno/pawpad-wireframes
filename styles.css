@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	color: #444;
+	text-align: center;
+	line-height: 1.5;
+	margin: 0 0 0 0;
+}
+
+nav,
+footer {
+	padding: 1% 0;
+	background-color: #aaa;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	height: 60px;
+}
+
+.home-page-title {
+	margin-top: 10vh;
+}
+
+.options {
+	margin-left: auto;
+	margin-right: auto;
+	height: fit-content;
+	width: 50vw;
+}
+
+.form-tab {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid black;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.list-container,
+.form-container {
+	padding-top: 30px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.dog-list-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	height: 80vh;
+}
+
+.dogs-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img {
+	width: 200px;
+	height: 100%;
+	object-fit: cover;
+}
+
+.info-img {
+	width: 50vh;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	border: 2px solid black;
+}
+
+.dog-img-container {
+	width: 100%;
+	height: 200px;
+	border: 2px solid black;
+}
+
+.add-dog {
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.add-new-dog {
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	padding: 0px;
+	list-style: none;
+}
+
+li {
+	margin: 20px;
+}
+
+button {
+	background-color: none;
+	border: none;
+	height: 40px;
+	margin: 10px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 80px;
+	width: 100vw;
+}
+
+.dog-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.other-notes,
+.medical-notes {
+	padding: 20px;
+}
+
+.updated-by {
+	text-align: center;
+	vertical-align: middle;
+}
+
+@media (min-width: 800px) {
+	.grid-container {
+		margin-top: 60px;
+		display: grid;
+		grid-template-columns: 1fr 1.1fr 0.9fr 1fr;
+		grid-template-rows: 1.1fr 0.7fr 1.2fr 1fr 0.5fr;
+		grid-template-areas: "dog-name dog-name dog-img dog-img" "spayed-neutered spayed-neutered dog-img dog-img" "shots-information shots-information basic-dog-details basic-dog-details" "medical-notes medical-notes other-notes other-notes" "updated-by updated-by updated-by updated-by";
+	}
+
+	.updated-by {
+		grid-area: updated-by;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.dog-name {
+		grid-area: dog-name;
+	}
+
+	.dog-img {
+		padding: 30px;
+	}
+
+	.spayed-neutered {
+		grid-area: spayed-neutered;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.spayed-neutered-check {
+		text-align: center;
+		vertical-align: middle;
+		line-height: 90px;
+		margin: 0 0 0 0;
+	}
+
+	.shots-information {
+		grid-area: shots-information;
+	}
+
+	.shot-check-container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.medical-notes {
+		grid-area: medical-notes;
+	}
+
+	.other-notes {
+		grid-area: other-notes;
+	}
+
+	.basic-dog-details {
+		grid-area: basic-dog-details;
+	}
+
+	.dog-img {
+		grid-area: dog-img;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.input-container {
+		flex-direction: row;
+	}
+
+	.submit-input,
+	.submit-cancel {
+		width: 10vw;
+	}
+
+	.scrambled-word {
+		font-size: 100px;
+	}
+}

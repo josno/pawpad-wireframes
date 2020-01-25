@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Add New Dog</title>
+</head>
+
+<body>
+    <nav role="navigation">Nav</nav>
+    <div class='form-container'>
+        <form action="/">
+            <div class="banner">
+                <h1>Add New Dog</h1>
+            </div>
+
+            <div class='text-field-item'>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="textfield"><br />
+            </div>
+
+
+            <div class='text-field-item'>
+                <label for="image">Image:</label>
+                <input type="file" name="pic" accept="image/*">
+                <input type="submit">
+            </div>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="male" value="male"> <label for="Male">Male</label><br>
+                <input type="radio" name="female" value="female"> <label for="female">Female</label><br>
+            </fieldset>
+
+            <label for="estimated-age">Estimated Age:</label>
+            <input id="age" type="text" name="textfield"><br />
+
+            <label for="arrival">Estimated Arrival:</label>
+            <input id="arrival" type="text" name="textfield"><br />
+
+            <fieldset>
+                <legend>Shots Completed:</legend>
+                <input id="shot-1" type="checkbox" name="toppings" value="shot-1">
+                <label for="shot-1">Shot #1</label><br>
+                <input id="shot-2" type="checkbox" name="toppings" value="shot-2">
+                <label for="shot-2">Shot #2</label><br>
+                <input id="shot-3" type="checkbox" name="toppings" value="shot-3">
+                <label for="shot-3">Shot #3</label><br>
+                <input id="shot-4" type="checkbox" name="toppings" value="shot-4">
+                <label for="shot-4">Shot #4</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Spayed/Neutered:</legend>
+                <input type="radio" name="male" value="male"> <label for="Male">Yes</label><br>
+                <input type="radio" name="female" value="female"> <label for="female">No</label><br>
+            </fieldset>
+
+            <label for="medical-notes">Medical Notes:</label><br>
+            <textarea id="medical-notes" name="medical-notes"></textarea>
+
+            <div class='textarea-item'>
+                <label for="more-notes">Additional Notes:</label><br>
+                <textarea id="more-notes" name="more-notes"></textarea>
+            </div>
+
+            <label for="updated-name">Updated By:</label>
+            <input id="updated-name" type="text" name="textfield"><br />
+
+            <div class='textarea-item'>
+                <label for="updated-date">Updated Date:</label>
+                <input id="updated-date" type="text" name="textfield"><br />
+            </div>
+
+        </form>
+    </div>
+    <button class="add-new-dog">
+        <a class='dog-link' href="add-a-dog-page.html"></a>
+        <h2>Add A New Dog</h2>
+    </button>
+
+
+
+</body>
+
+</html>
