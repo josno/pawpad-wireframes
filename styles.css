@@ -71,6 +71,16 @@ nav {
 	justify-content: center;
 }
 
+.dog-list-name {
+	color: white;
+	position: relative;
+	top: -70px;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	background-color: gray;
+}
+
 img {
 	width: 200px;
 	height: 100%;
