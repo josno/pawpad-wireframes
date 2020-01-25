@@ -14,74 +14,83 @@
     <div class='form-container'>
         <form action="/">
             <div class="banner">
-                <h1>Add New Dog</h1>
+                <h1 class='form-title'>Add New Dog</h1>
             </div>
 
             <div class='text-field-item'>
                 <label for="name">Name:</label>
-                <input id="name" type="text" name="textfield"><br />
+                <input id="name" type="text" name="textfield" value='Winky'><br />
             </div>
 
 
             <div class='text-field-item'>
-                <label for="image">Image:</label>
+                <label for="image">New Image:</label>
                 <input type="file" name="pic" accept="image/*">
                 <input type="submit">
             </div>
 
             <fieldset>
                 <legend>Gender:</legend>
-                <input type="radio" name="male" value="male"> <label for="Male">Male</label><br>
+                <input type="radio" name="male" value="male" checked> <label for="Male">Male</label><br>
                 <input type="radio" name="female" value="female"> <label for="female">Female</label><br>
             </fieldset>
 
             <label for="estimated-age">Estimated Age:</label>
-            <input id="age" type="text" name="textfield"><br />
+            <input id="age" type="text" name="textfield" value="6 month"><br />
 
             <label for="arrival">Estimated Arrival:</label>
-            <input id="arrival" type="text" name="textfield"><br />
+            <input id="arrival" type="text" name="textfield" value="September 5, 2020"><br />
 
             <fieldset>
                 <legend>Shots Completed:</legend>
                 <input id="shot-1" type="checkbox" name="toppings" value="shot-1">
                 <label for="shot-1">Shot #1</label><br>
-                <input id="shot-2" type="checkbox" name="toppings" value="shot-2">
+                <input id="shot-2" type="checkbox" name="toppings" value="shot-2" checked>
                 <label for="shot-2">Shot #2</label><br>
                 <input id="shot-3" type="checkbox" name="toppings" value="shot-3">
                 <label for="shot-3">Shot #3</label><br>
-                <input id="shot-4" type="checkbox" name="toppings" value="shot-4">
+                <input id="shot-4" type="checkbox" name="toppings" value="shot-4" checked>
                 <label for="shot-4">Shot #4</label>
             </fieldset>
 
             <fieldset>
                 <legend>Spayed/Neutered:</legend>
-                <input type="radio" name="male" value="male"> <label for="Male">Yes</label><br>
-                <input type="radio" name="female" value="female"> <label for="female">No</label><br>
+                <input type="radio" name="yes" value="yes"> <label for="yes">Yes</label><br>
+                <input type="radio" name="no" value="no" checked> <label for="no">No</label><br>
             </fieldset>
 
             <label for="medical-notes">Medical Notes:</label><br>
-            <textarea id="medical-notes" name="medical-notes"></textarea>
+            <textarea id="medical-notes" name="medical-notes"
+                contentEditable="true">Winky got some shots completed, but need further evaluation.</textarea>
 
             <div class='textarea-item'>
                 <label for="more-notes">Additional Notes:</label><br>
-                <textarea id="more-notes" name="more-notes"></textarea>
+                <textarea id="more-notes" name="more-notes"
+                    contentEditable="true">Winky needs lots of walks because he is still a puppy.</textarea>
             </div>
 
-            <label for="updated-name">Updated By:</label>
-            <input id="updated-name" type="text" name="textfield"><br />
+            <label for=" updated-name">Updated By:</label>
+            <input id="updated-name" type="text" name="textfield" value="Melanie"><br />
 
             <div class='textarea-item'>
                 <label for="updated-date">Updated Date:</label>
-                <input id="updated-date" type="text" name="textfield"><br />
+                <input id="updated-date" type="text" name="textfield" value="9/5/2020"><br />
             </div>
 
         </form>
     </div>
-    <button class="add-new-dog">
-        <a class='dog-link' href="add-a-dog-page.html"></a>
-        <h2>Add A New Dog</h2>
-    </button>
 
+    <div class='nav-buttons'>
+        <button class="add-new-dog">
+            <a class='dog-link' href="dog-list-page.html">Cancel</a>
+        </button>
+
+        <button class="add-new-dog">
+            <a class='dog-link' href="dog-list-page.html">Submit</a>
+        </button>
+
+
+    </div>
 
 
 </body>
